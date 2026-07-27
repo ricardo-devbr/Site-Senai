@@ -57,19 +57,53 @@
     </article>
 
   </section>
-  <foote>
+  <footer>
 
     <p>Direitos reservados a Ricardo Paiva</p>
 
     <section id="contato">
       <h2>Contatos:</h2>
       <p>Entre em contato comigo para orcar um projeto</p>
-      <adress>
+      <address>
         Email: <a href="mailto:ricardo.paiva1922@gmail.com" target="_blank">ricardo.paiva1922@gmail.com</a> <br>
         Telefone: <a href="tel:(99)9999-9999">(99)9999-9999</a>
-      </adress>
+      </address>
+      <br>
+      <form action=""> <!-- cria um formulario -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>  <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"> <br>
+
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto"> <!-- cria uma caixa de selecao para os assuntos -->
+            <option value="orcamento">Orcamento:</option>
+            <option value="duvidas">Duvidas:</option>
+            <option value="outros">Outros:</option>
+        </select>
+
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+
+        <br>
+        <br>
+
+        <input type="checkbox" id="inscricao" name="inscricao">
+        <label for="inscricao">Deseja inscrever-se?</label>
+
+        <br>
+        <br>
+        <input type="submit" value="Enviar mensagem">
+      </form>
+
     </section>
-  </foote>
+  </footer>
 </body>
 
 </html>
